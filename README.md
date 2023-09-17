@@ -23,25 +23,7 @@ Facite! - This translates to "Do it!" in Latin. Facite is a web-based task manag
 
 ## Installation
 
-1. Clone this repository to your local machine:
-
-   ```shell
-   git clone https://github.com/alexindevs/facite.git
-   ```
-
-2. Install the project dependencies:
-
-   ```shell
-   npm install
-   ```
-
-3. Start the development server:
-
-   ```shell
-   npm start
-   ```
-
-3. Open your web browser and visit [Facite](http://facite.vercel.app) to use the application.
+Open your web browser and visit [Facite](http://facite-three.vercel.app) to use the application.
 
 ## Usage
 
