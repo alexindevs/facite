@@ -1,0 +1,87 @@
+.addTask {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    z-index: 2000;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.inputs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+input[type=text].taskName {
+    border: none;
+    font-size: 30px;
+    caret-color: rgb(7, 172, 255);
+    padding: 10px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+textarea.taskDescription {
+    border: none;
+    caret-color: rgb(7, 172, 255);
+    padding: 10px;
+    margin-bottom: 15px;
+    line-height: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.x_button {
+    margin-left: auto;
+    width: fit-content;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+textarea.taskDescription:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+textarea.taskDescription::placeholder {
+    font-size: 19px;
+
+}
+
+.date input {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 90%;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px;
+    width: 78%;
+    min-width: 50%;
+}
+
+input[type=text].taskName::placeholder {
+    font-size: 30px;
+}
+
+.addTaskButton {
+    background-color: rgb(7, 172, 255);
+    color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+}

@@ -1,0 +1,39 @@
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 60%;
+    height: 8rem;
+    border-radius: 20px;
+    box-shadow: inset -4px -4px 2px 1px rgba(0, 0, 0, 0.2);
+    min-width: 50%;
+    position: relative;
+}
+
+.category:hover {
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.category_name {
+    font-size: 20px;
+    color: white;
+    padding-top: 0px;
+    font-weight: 700;
+}
+  
+  
+
+  
+  .delete_icon {
+    display: none;
+    position: absolute;
+    top: 75%;
+    right: 4%;
+  }
+  
+  .category:hover .delete_icon {
+    display: block;
+  }
+  

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400&display=swap');
+
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    background: url(https://i0.wp.com/ese2240.seas.upenn.edu/wp-content/uploads/2018/11/background-website-light-blue-wallpapers-background-2.jpg?ssl=1);
+    border-radius: 20px;
+    margin: 40px auto;
+    width: 85%;
+    color: white;
+    flex-basis: 50%;
+    display: flex;
+}
+
+.left {
+    padding: 80px;
+    margin: auto;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 35px;
+    color: white;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+
+.hero .right {
+    height: 100%;
+    width: 50%;
+}
+
+.heroImg {
+    height: 100%;
+    width: 40vw;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    .right {
+        display: none;
+    }
+}

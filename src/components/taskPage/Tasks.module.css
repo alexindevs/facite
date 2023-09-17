@@ -1,0 +1,32 @@
+.taskTitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'Raleway';
+    margin: 30px 30px 10px 0px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.addTaskBtn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgb(7, 172, 255);
+    color: white;
+    border: none;
+    font-size: 20px;
+    position: fixed;
+    top: 95%;
+    left: 90%;
+    cursor: pointer;
+    z-index: 100;
+    transform: translate(-90%, -90%);
+}

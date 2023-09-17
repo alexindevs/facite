@@ -1,70 +1,106 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FACITE! Task Management System
 
-## Available Scripts
+Facite! - This translates to "Do it!" in Latin. Facite is a web-based task management application that allows users to organize their tasks by categories, set due dates, and track their progress. NOTE: This is a hobby project, some parts might still be unfinished.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Create tasks with names, descriptions, categories, and due dates.
+- Categorize tasks to easily manage and filter them.
+- Edit task details, including name, description, and due date.
+- Mark tasks as completed or pending.
+- Delete tasks when they are no longer needed.
+- View tasks by category or all tasks at once.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository to your local machine:
 
-### `npm run build`
+   ```shell
+   git clone https://github.com/alexindevs/facite.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install the project dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```shell
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
 
-### `npm run eject`
+   ```shell
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Open your web browser and visit [Facite](http://facite.vercel.app) to use the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Register or log in to your account.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Create new tasks by clicking the "Add Task" button and filling out the task details.
 
-## Learn More
+3. Edit task details by clicking on a task and selecting "Edit."
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Mark tasks as completed or pending by clicking the checkbox next to each task.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Delete tasks by clicking the trash icon next to each task.
 
-### Code Splitting
+6. Filter tasks by category or view all tasks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Frontend:**
+  - React.js: JavaScript library for building user interfaces.
+  - React Router: For handling routing within the application.
+  - Axios: For making HTTP requests to the backend.
+  - React Datepicker: A datepicker component for handling due dates.
+  - CSS Modules: For scoped CSS styles.
 
-### Making a Progressive Web App
+- **Backend:**
+  - Node.js: JavaScript runtime for the server.
+  - Express.js: Web application framework for Node.js.
+  - PostgreSQL: Relational database for storing user data and tasks.
+  - JWT (JSON Web Tokens): For user authentication and authorization.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Contributions to this project are welcome! To contribute, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the repository.
 
-### Deployment
+2. Create a new branch for your feature or bug fix:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```shell
+   git checkout -b feature/my-feature
+   ```
 
-### `npm run build` fails to minify
+3. Make your changes and commit them:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```shell
+   git commit -m "Add feature"
+   ```
+
+4. Push your changes to your forked repository:
+
+   ```shell
+   git push origin feature/my-feature
+   ```
+
+5. Create a pull request from your forked repository to the main project repository.
+
+6. Wait for your pull request to be reviewed and merged!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -1,0 +1,19 @@
+h1 {
+    font-weight: 700;
+    color: black;
+    font-size: 40px;
+    width: fit-content;
+    margin: auto 0px;
+    margin-top: 80px;
+    font-family: 'Raleway';
+
+}
+
+.username {
+    background: linear-gradient(to right, rgb(1, 117, 159) 0%,  rgb(45, 157, 248) 50%, rgb(120, 180, 254) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-decoration: none;
+}

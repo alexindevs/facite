@@ -1,0 +1,24 @@
+.task {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.task p {
+    padding-top: 0px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.taskDeleteIcon {
+    margin-left: auto;
+}
+
+.completed.task p {
+    text-decoration: line-through;
+    color: gray;
+    text-decoration-color: gray;
+}

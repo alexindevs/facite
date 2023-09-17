@@ -1,0 +1,21 @@
+.categories {
+    display: flex;
+    gap: 40px;
+    font-family: 'Raleway';
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide the scrollbar for Firefox */
+    -ms-overflow-style: none;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+
+.categoriesTitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'Raleway';
+    margin: 30px 30px 10px 0px;
+    text-transform: uppercase;
+}
