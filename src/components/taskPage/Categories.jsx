@@ -29,7 +29,7 @@ const Categories = () => {
       const userId = decodedToken.id;
   
       // Fetch categories using the user ID
-      const response = await axios.get(`http://localhost:5000/api/categories/${userId}`);
+      const response = await axios.get(`https://facite-backend.onrender.com/api/categories/${userId}`);
   
       // Transform the response data into an array of objects
       const categoriesArray = response.data.map((category) => ({
@@ -47,7 +47,7 @@ const Categories = () => {
   const handleCategoryClick = async (categoryId, categoryName) => {
     try {
       // Fetch tasks associated with the selected category
-      const response = await axios.get(`http://localhost:5000/api/tasks/category/${categoryId}`);
+      const response = await axios.get(`https://facite-backend.onrender.com/api/tasks/category/${categoryId}`);
 
       // Update the tasks state with fetched tasks
       setTasks(response.data);
@@ -70,7 +70,7 @@ const Categories = () => {
       };
 
       // Make a POST request to the server to add the category
-      await axios.post("http://localhost:5000/api/categories/AddCategory", categoryData);
+      await axios.post("https://facite-backend.onrender.com/api/categories/AddCategory", categoryData);
 
       // After adding the category, fetch the updated categories
       fetchCategories();
@@ -82,7 +82,7 @@ const Categories = () => {
 
   const handleDeleteCategory = async (categoryId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/categories/DeleteCategory/${categoryId}`);  
+      await axios.delete(`https://facite-backend.onrender.com/api/categories/DeleteCategory/${categoryId}`);  
       fetchCategories();
     } catch (error) {
       console.error("Error deleting category:", error);

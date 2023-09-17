@@ -41,7 +41,7 @@ const Signin = () => {
   const registerHandler = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/register', registerCredentials);
+      const response = await axios.post('https://facite-backend.onrender.com/api/register', registerCredentials);
       console.log(response.data); // You can handle the response data here
       if (response.data.error) {
         setRegisterError(response.data.error);
@@ -56,7 +56,7 @@ const Signin = () => {
   const loginHandler = async (e) => {
     e.preventDefault();
     try {
-        const response = await axios.post('http://localhost:5000/api/login', loginCredentials);
+        const response = await axios.post('https://facite-backend.onrender.com/api/login', loginCredentials);
 
         if (response.data.error) {
           setLoginError(response.data.error);

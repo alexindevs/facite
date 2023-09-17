@@ -19,7 +19,7 @@ const DisplayTask = ({ taskId, onClose }) => {
   const fetchTaskDetails = async () => {
     try {
       // Fetch the task details using the task ID
-      const response = await axios.get(`http://localhost:5000/api/tasks/id/${taskId}`);
+      const response = await axios.get(`https://facite-backend.onrender.com/api/tasks/id/${taskId}`);
       const taskDetails = response.data;
 
       // Set the fetched task data
@@ -40,7 +40,7 @@ const DisplayTask = ({ taskId, onClose }) => {
     try {
       // Perform the update request to the server
       console.log(editedFields)
-      await axios.put(`http://localhost:5000/api/tasks/id/${taskId}`, editedFields);
+      await axios.put(`https://facite-backend.onrender.com/api/tasks/id/${taskId}`, editedFields);
 
       // After successful update, fetch updated task details
       fetchTaskDetails();

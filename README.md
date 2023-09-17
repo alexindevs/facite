@@ -62,16 +62,8 @@ Facite! - This translates to "Do it!" in Latin. Facite is a web-based task manag
 
 - **Frontend:**
   - React.js: JavaScript library for building user interfaces.
-  - React Router: For handling routing within the application.
   - Axios: For making HTTP requests to the backend.
-  - React Datepicker: A datepicker component for handling due dates.
   - CSS Modules: For scoped CSS styles.
-
-- **Backend:**
-  - Node.js: JavaScript runtime for the server.
-  - Express.js: Web application framework for Node.js.
-  - PostgreSQL: Relational database for storing user data and tasks.
-  - JWT (JSON Web Tokens): For user authentication and authorization.
 
 ## Contributing
 

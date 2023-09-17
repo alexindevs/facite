@@ -31,7 +31,7 @@ const Task = (props) => {
         const userId = decodedToken.id;
     
         // Fetch categories using the user ID
-        const response = await axios.get(`http://localhost:5000/api/categories/${userId}`);
+        const response = await axios.get(`https://facite-backend.onrender.com/api/categories/${userId}`);
         const category = response.data.find((cat) => cat.id === parseInt(props.category_id));
         if (category) {
           setAccentColor(category.color);
@@ -53,7 +53,7 @@ const Task = (props) => {
     const newStatus = status === "pending" ? "completed" : "pending";
   
     try {
-      await axios.post('http://localhost:5000/api/tasks/updateStatus', {
+      await axios.post('https://facite-backend.onrender.com/api/tasks/updateStatus', {
         taskId: props.id, // Change this to the actual task ID
         status: newStatus,
       });

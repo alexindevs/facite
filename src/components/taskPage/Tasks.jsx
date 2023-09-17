@@ -30,7 +30,7 @@ const Tasks = () => {
       const decodedToken = jwt.decode(token);
       const userId = decodedToken.id;
 
-      const response = await axios.get(`http://localhost:5000/api/tasks/${userId}`);
+      const response = await axios.get(`https://facite-backend.onrender.com/api/tasks/${userId}`);
       const fetchedTasks = response.data.map(task => task);
       if (fetchedTasks) {
       console.log("Fetched Task date here:", fetchedTasks[0].due_date);
@@ -43,7 +43,7 @@ const Tasks = () => {
 
   const taskDeleteHandler = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/deleteTask/${id}`)
+      await axios.delete(`https://facite-backend.onrender.com/api/tasks/deleteTask/${id}`)
       fetchAllTasks();
     } catch (error) {
       console.error('Error deleting task:', error);

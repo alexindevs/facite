@@ -37,7 +37,7 @@ const AddTask = (props) => {
     };
     console.log(newTask.due_date);
     try {
-      const response = await axios.post("http://localhost:5000/api/tasks/AddTask", newTask);
+      const response = await axios.post("https://facite-backend.onrender.com/api/tasks/AddTask", newTask);
       const addedTask = response.data;
   
       console.log("Task added:", addedTask);
@@ -57,7 +57,7 @@ const AddTask = (props) => {
    const userId = decodedToken.id;
 
    // Fetch categories using the user ID
-   const response = await axios.get(`http://localhost:5000/api/categories/${userId}`);
+   const response = await axios.get(`https://facite-backend.onrender.com/api/categories/${userId}`);
 
    // Transform the response data into an array of objects
    const categoriesArray = response.data.map((category) => ({
