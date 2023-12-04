@@ -6,13 +6,19 @@ import { useTaskContext } from "../../TaskContext";
 
 
 const Category = (props) => {
-  const {tasks} = useTaskContext();
+  const { tasks } = useTaskContext();
+  const [categoryCount, setCategoryCount] = useState(0);
 
   let id = 0;
   if (props.id !== undefined)
   {
    id = props.id;
   }
+
+  useEffect(() => {
+    const count = tasks.filter((task) => task.category_id === id).length;
+    setCategoryCount(count);
+  }, [tasks]);
 
 
 
@@ -30,7 +36,7 @@ const Category = (props) => {
     return (
       <div className={styles.category} style={{ backgroundColor: props.color }} onClick={handleClick}>
         <p className={styles.category_name}>{props.name}</p>
-        <span style={{ color: "white" }}>0 tasks</span>
+        <span style={{ color: "white" }}>{categoryCount} tasks</span>
         <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
